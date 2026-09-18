@@ -12,6 +12,10 @@
 
 * { box-sizing: border-box; }
 
+html {
+  background-color: var(--bg);
+}
+
 body {
   font-family: var(--mono);
   background-color: var(--bg);
@@ -19,6 +23,7 @@ body {
   line-height: 1.7;
   margin: 0;
   padding: 40px 20px 80px;
+  min-height: 100vh;
 }
 
 .wrap {
@@ -37,9 +42,9 @@ body {
 }
 
 .avatar {
-  width: 96px;
-  height: 96px;
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--border);
   filter: grayscale(35%);
@@ -77,35 +82,29 @@ body {
 /* ===== Onglets ===== */
 .tabs {
   display: flex;
-  gap: 4px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid var(--border);
+  gap: 24px;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--border);
 }
 
 .tab-btn {
   font-family: var(--mono);
   background: none;
   border: none;
-  color: var(--text-dim);
-  padding: 10px 16px;
-  font-size: 0.95rem;
+  color: var(--text);
+  padding: 4px 0;
+  font-size: 1.05rem;
+  font-weight: 600;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
-}
-
-.tab-btn::before {
-  content: "./";
-  opacity: 0.5;
 }
 
 .tab-btn:hover {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .tab-btn.active {
   color: var(--accent);
-  border-bottom-color: var(--accent);
 }
 
 /* ===== Panneaux ===== */
@@ -128,16 +127,12 @@ body {
 }
 
 h2 {
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   color: var(--text);
   font-weight: 600;
   margin: 0 0 14px;
-  text-transform: lowercase;
-}
-
-.tag {
-  color: var(--accent);
-  margin-right: 4px;
+  padding-left: 12px;
+  border-left: 3px solid var(--accent);
 }
 
 p {
@@ -229,7 +224,7 @@ footer a:hover {
     align-items: flex-start;
   }
   .avatar {
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
   }
 }
