@@ -1,78 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teddy Andrieu</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teddy Andrieu</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="projets.html">Projets</a>
-    <a href="cv.html">Parcours</a>
+<div class="wrap">
+
+  <header class="masthead">
+    <img class="avatar" src="photo.jpg" alt="Photo de Teddy Andrieu">
+    <div class="ident">
+      <h1><span class="prompt">&gt;</span> Teddy Andrieu<span class="cursor">_</span></h1>
+      <p class="subtitle">Interne en pharmacie hospitalière &middot; IA appliquée à la santé</p>
+    </div>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="profil" role="tab" aria-selected="true">Profil</button>
+    <button class="tab-btn" data-tab="liens" role="tab" aria-selected="false">Liens</button>
   </nav>
 
   <main>
-    <section class="hero">
-      <h1>Teddy Andrieu</h1>
-      <p class="subtitle">Interne en pharmacie hospitalière</p>
-      <p>
-        Je souhaite réaliser une année de recherche à partir de novembre 2026
-        au sein du CIAD, en parallèle du Master 2 Intelligence Artificielle en
-        Santé de l'Université de Bourgogne.
-      </p>
+
+    <!-- ===== TAB: PROFIL (accueil + parcours + projet fusionnés) ===== -->
+    <section id="profil" class="tab-panel active">
+
+      <section class="block">
+        <h2><span class="tag">#</span> à propos</h2>
+        <p>
+          Je souhaite réaliser une année de recherche à partir de novembre 2026
+          au sein du CIAD, en parallèle du Master 2 Intelligence Artificielle en
+          Santé de l'Université de Bourgogne.
+        </p>
+        <p>
+          Actuellement interne en pharmacie hospitalière au CHU de Besançon,
+          dans le cadre de mon diplôme d'études spécialisées (DES). Mon parcours
+          combine pratique clinique hospitalière et une orientation croissante
+          vers la recherche, avec des formations complémentaires en intelligence
+          artificielle appliquée à la santé et un semestre de recherche au
+          laboratoire CIAD de Dijon.
+        </p>
+      </section>
+
+      <section class="block">
+        <h2><span class="tag">#</span> domaines d'intérêt</h2>
+        <ul>
+          <li>Modélisation computationnelle des processus biologiques (voies de signalisation, apoptose, prolifération cellulaire)</li>
+          <li>Intelligence artificielle appliquée à la pharmacologie et à la recherche translationnelle</li>
+          <li>Cibles thérapeutiques et mécanismes d'action des médicaments (thérapies ciblées, anticorps monoclonaux, inhibiteurs enzymatiques)</li>
+          <li>Structuration et formalisation de connaissances biomédicales (bases de données KEGG, Reactome, UniProt)</li>
+          <li>Pharmacie hospitalière et pratique clinique</li>
+        </ul>
+      </section>
+
+      <section class="block">
+        <h2><span class="tag">#</span> projet en cours &mdash; AIDD4H</h2>
+        <p>
+          Projet mené au laboratoire CIAD (Université de Bourgogne) dans le cadre
+          d'un semestre libre de recherche : modélisation des processus cellulaires
+          et des cibles thérapeutiques dans un système de simulation basé sur
+          l'intelligence artificielle. Le travail consiste à formaliser des
+          mécanismes biologiques complexes pour les intégrer dans un moteur de
+          simulation, en collaboration avec un développeur informatique.
+        </p>
+      </section>
+
+      <section class="block">
+        <h2><span class="tag">#</span> compétences</h2>
+        <p><span class="key">Informatique</span> R, Microsoft Office (Word, Excel, PowerPoint)</p>
+        <p><span class="key">Langues</span> Anglais, Espagnol</p>
+      </section>
+
     </section>
 
-    <section>
-      <h2>Domaines d'intérêt</h2>
-      <ul>
-        <li>Modélisation computationnelle des processus biologiques (voies de signalisation, apoptose, prolifération cellulaire)</li>
-        <li>Intelligence artificielle appliquée à la pharmacologie et à la recherche translationnelle</li>
-        <li>Cibles thérapeutiques et mécanismes d'action des médicaments (thérapies ciblées, anticorps monoclonaux, inhibiteurs enzymatiques)</li>
-        <li>Structuration et formalisation de connaissances biomédicales (bases de données KEGG, Reactome, UniProt)</li>
-        <li>Pharmacie hospitalière et pratique clinique</li>
-      </ul>
+    <!-- ===== TAB: LIENS ===== -->
+    <section id="liens" class="tab-panel">
+      <section class="block">
+        <h2><span class="tag">#</span> retrouvez-moi</h2>
+        <div class="links">
+          <a class="link-card" href="https://github.com/tedd55" target="_blank" rel="noopener">
+            <span class="link-label">GitHub</span><span class="link-arrow">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://linkedin.com/in/TON-PROFIL" target="_blank" rel="noopener">
+            <span class="link-label">LinkedIn</span><span class="link-arrow">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://drive.google.com/drive/folders/1DF2J9Y5cBbxewib-w_YLlnF-K-aATHWa?usp=drive_link" target="_blank" rel="noopener">
+            <span class="link-label">Rapports d'activité CIAD (Drive)</span><span class="link-arrow">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://univ-montpellier.academia.edu/teddyAndrieu" target="_blank" rel="noopener">
+            <span class="link-label">Academia.edu</span><span class="link-arrow">&rarr;</span>
+          </a>
+          <a class="link-card" href="https://www.researchgate.net/profile/Teddy-Andrieu-2?ev=hdr_xprf" target="_blank" rel="noopener">
+            <span class="link-label">ResearchGate</span><span class="link-arrow">&rarr;</span>
+          </a>
+          <a class="link-card" href="mailto:teddyandrieu5@gmail.com">
+            <span class="link-label">teddyandrieu5@gmail.com</span><span class="link-arrow">&rarr;</span>
+          </a>
+        </div>
+      </section>
     </section>
 
-    <section>
-      <h2>Parcours en bref</h2>
-      <p>
-        Actuellement interne en pharmacie hospitalière au CHU de Besançon, dans
-        le cadre de mon diplôme d'études spécialisées (DES). Mon parcours combine
-        pratique clinique hospitalière et une orientation croissante vers la
-        recherche, avec des formations complémentaires en intelligence
-        artificielle appliquée à la santé et un semestre de recherche au
-        laboratoire CIAD de Dijon.
-      </p>
-    </section>
-
-    <section>
-      <h2>Mes liens</h2>
-      <div class="links">
-        <a class="link-card" href="https://drive.google.com/drive/folders/1DF2J9Y5cBbxewib-w_YLlnF-K-aATHWa?usp=drive_link" target="_blank" rel="noopener">
-          Rapports d'activité CIAD (Google Drive)
-        </a>
-        <a class="link-card" href="https://github.com/tedd55" target="_blank" rel="noopener">
-          Mon GitHub
-        </a>
-        <a class="link-card" href="https://linkedin.com/in/TON-PROFIL" target="_blank" rel="noopener">
-          Mon LinkedIn
-        </a>
-      </div>
-    </section>
-
-    <section>
-      <h2>Compétences</h2>
-      <p><strong>Informatique :</strong> R, Microsoft Office (Word, Excel, PowerPoint)</p>
-      <p><strong>Langues :</strong> Anglais, Espagnol</p>
-    </section>
   </main>
 
   <footer>
-    <p>Contact : teddyandrieu5@gmail.com</p>
+    <p>Contact : <a href="mailto:teddyandrieu5@gmail.com">teddyandrieu5@gmail.com</a></p>
   </footer>
+
+</div>
+
+<script>
+  const buttons = document.querySelectorAll('.tab-btn');
+  const panels = document.querySelectorAll('.tab-panel');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); });
+      panels.forEach(p => p.classList.remove('active'));
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+    });
+  });
+</script>
 
 </body>
 </html>
